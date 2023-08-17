@@ -1,15 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Component } from 'react'
+import Navbar from './components/Navbar'
+import Card from './components/card'
+import CekTokoSebelah from './components/CekTokoSebelah'
 
-function App() {
-
-  return (
-    <h1 className="text-3xl italic font-bold underline">
-      Hello world!
-    </h1>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <section>
+        <div className="w-full h-full">
+          <Navbar/>
+          {/* <Card/> */}
+          <CekTokoSebelah />
+        </div>
+      </section>
+    )
+  }
 }
-
-export default App
