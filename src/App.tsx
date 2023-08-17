@@ -1,18 +1,21 @@
-import { Component } from 'react'
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Card from './components/card'
-import CekTokoSebelah from './components/CekTokoSebelah'
+import Home from './Pages/Home'
+import Favorites from './Pages/Favorites'
+import Detail from './Pages/Detail'
 
-export default class App extends Component {
-  render() {
-    return (
-      <section>
-        <div className="w-full h-full">
-          <Navbar/>
-          {/* <Card/> */}
-          <CekTokoSebelah />
-        </div>
-      </section>
-    )
-  }
+function App() {
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path='/' Component={Home} />
+        <Route path='/Favorites' Component={Favorites} />
+        <Route path='/Detail' Component={Detail} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
+
+export default App

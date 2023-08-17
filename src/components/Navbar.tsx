@@ -1,21 +1,19 @@
-import { Component } from 'react'
+import React from 'react'
 
-class Navbar extends Component {
-  render() {
+const Navbar = () => {
     return (
-      <nav className='bg-blue-800 p-4'>
-        <div className="container mx-auto">
-            <a className='text-white font-bold text-xl' href="/">Logo</a>
-            <ul className='space-x-4'>
-                <li><a className='text-white hover:text-gray-300' href="/">Beranda</a></li>
-                <li><a className='text-white hover:text-gray-300' href="/about">Tentang</a></li>
-                <li><a className='text-white hover:text-gray-300' href="/Kontak">Kontak</a></li>
-            </ul>
-        </div>
+        <nav className="bg-gray-800 p-4">
+            <div className="container mx-auto flex justify-between items-center">
+                <a href="/" className="text-white font-bold text-lg mx-5">My Website</a>
+                <ul className="flex space-x-4">
+                    <li><a href="/" className="text-white">Home</a></li>
+                    <li><a href="/Favorites" className="text-white">Favorites</a></li>
+                    <li><a href="/Detail" className="text-white">Detail</a></li>
+                    <li><a href="#" className="text-white">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    );
+};
 
-      </nav>
-    )
-  }
-}
-
-export default Navbar
+export default Navbar;

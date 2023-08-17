@@ -11,9 +11,9 @@ class CekTokoSebelah extends Component {
                 className='w-80 h-auto rounded-md m-5'
                 src="https://upload.wikimedia.org/wikipedia/id/2/20/Cek_Toko_Sebelah.jpg" alt="cek-toko-sebelah" />
             </div>
-            <div className="lg:col-span-8">
+            <div className="lg:col-span-8 justify-item-stretch content-stretch">
               <div className="judul">
-                <h1>Cek Toko Sebelah</h1>
+                <h1 className='text-5xl font-bold my-3'>Cek Toko Sebelah</h1>
                 <p>Check The Store Next Door</p>
                 <hr />
               </div>
