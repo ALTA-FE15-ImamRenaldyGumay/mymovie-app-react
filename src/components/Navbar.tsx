@@ -1,8 +1,8 @@
 
 const Navbar = () => {
     return (
-        <nav className="bg-black p-4">
-            <div className="container mx-auto flex  items-center">
+        <nav className="bg-black p-4 sticky top-0">
+            <div className="container mx-auto flex items-center">
                 <a href="/" className="text-white font-bold text-lg mx-5">My Website</a>
                 <ul className="flex space-x-4">
                     <li><a href="/" className="text-white">Home</a></li>
