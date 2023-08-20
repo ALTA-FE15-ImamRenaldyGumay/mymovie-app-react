@@ -1,9 +1,8 @@
-import React from 'react'
 
 const Navbar = () => {
     return (
-        <nav className="bg-gray-800 p-4">
-            <div className="container mx-auto flex justify-between items-center">
+        <nav className="bg-black p-4">
+            <div className="container mx-auto flex  items-center">
                 <a href="/" className="text-white font-bold text-lg mx-5">My Website</a>
                 <ul className="flex space-x-4">
                     <li><a href="/" className="text-white">Home</a></li>
